@@ -83,7 +83,7 @@ VALUES
 SELECT *
 FROM Student;
 
--- 2. Hiển thị danh sách các học viên đang theo học (Status = true/1)
+-- 2. Hiển thị danh sách các học viên đang theo học (Status = true)
 SELECT *
 FROM Student
 WHERE Status = true;
