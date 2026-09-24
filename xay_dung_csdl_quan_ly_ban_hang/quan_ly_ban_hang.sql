@@ -25,7 +25,7 @@ CREATE TABLE `Order` (
     FOREIGN KEY (cID) REFERENCES Customer(cID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
--- 5. Tạo bảng OrderDetail (Chi tiết hóa đơn - Bảng trung gian giữa Order và Product)
+-- 5. Tạo bảng OrderDetail (Chi tiết hóa đơn)
 CREATE TABLE OrderDetail (
     oID INT NOT NULL,
     pID INT NOT NULL,
