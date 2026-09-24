@@ -1,8 +1,7 @@
--- 1. Sử dụng CSDL classicmodels
 USE classicmodels;
 
 -- ===================================================
--- 2. THAM SỐ LOẠI IN
+-- 1. TRIỂN KHAI STORED PROCEDURE VỚI THAM SỐ IN
 -- ===================================================
 DELIMITER //
 
@@ -17,12 +16,12 @@ END //
 
 DELIMITER ;
 
--- Gọi Stored Procedure loại IN
+-- Gọi thử tham số IN
 CALL getCusById(175);
 
 
 -- ===================================================
--- 3. THAM SỐ LOẠI OUT
+-- 2. TRIỂN KHAI STORED PROCEDURE VỚI THAM SỐ OUT
 -- ===================================================
 DELIMITER //
 
@@ -41,13 +40,13 @@ END //
 
 DELIMITER ;
 
--- Gọi Stored Procedure loại OUT và kiểm tra kết quả
+-- Gọi thử tham số OUT
 CALL GetCustomersCountByCity('Lyon', @total);
-SELECT @total AS TotalCustomersInLyon;
+SELECT @total;
 
 
 -- ===================================================
--- 4. THAM SỐ LOẠI INOUT
+-- 3. TRIỂN KHAI STORED PROCEDURE VỚI THAM SỐ INOUT
 -- ===================================================
 DELIMITER //
 
@@ -63,11 +62,9 @@ END //
 
 DELIMITER ;
 
--- Gọi Stored Procedure loại INOUT
+-- Gọi thử tham số INOUT
 SET @counter = 1;
-CALL SetCounter(@counter, 1); -- Tăng lên 2
-CALL SetCounter(@counter, 1); -- Tăng lên 3
-CALL SetCounter(@counter, 5); -- Tăng lên 8
-
--- Hiển thị kết quả của biến @counter
-SELECT @counter AS FinalCounter;
+CALL SetCounter(@counter, 1);
+CALL SetCounter(@counter, 1);
+CALL SetCounter(@counter, 5);
+SELECT @counter;
