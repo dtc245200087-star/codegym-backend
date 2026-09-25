@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+nav {
+    background-color: white;
+    padding: 15px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+section {
+    background-color: #dcdcdc;
+    padding: 30px 20px;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+article {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ccc;
+}
+
+article h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+article p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+}
