@@ -60,3 +60,15 @@ article p {
     line-height: 1.5;
     color: #111;
 }
+
+aside {
+    background-color: #f4f4f4;
+    padding: 15px 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
