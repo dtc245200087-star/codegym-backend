@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đọc Truyện Ngắn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Bước 4: Tạo ảnh truyện đặt ở đầu trang -->
+        <div class="banner">
+            <img src="https://via.placeholder.com/800x300" alt="Ảnh bìa truyện">
+            <h1>Tên Truyện Ngắn Hay</h1>
+        </div>
+
+        <!-- Bước 1 & Bước 5: Tạo các mục lục truyện sử dụng thẻ <h5> -->
+        <div class="toc">
+            <h3>Mục lục truyện</h3>
+            <ul>
+                <li><a href="#chuong1"><h5>Chương 1: Khởi đầu câu chuyện</h5></a></li>
+                <li><a href="#chuong2"><h5>Chương 2: Diễn biến bất ngờ</h5></a></li>
+                <li><a href="#chuong3"><h5>Chương 3: Kết thúc viên mãn</h5></a></li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- Bước 2 & Bước 3: Nội dung ứng với từng mục lục và gắn ID để liên kết -->
+        <div class="content">
+            <section id="chuong1">
+                <h2>Chương 1: Khởi đầu câu chuyện</h2>
+                <p>Nội dung chi tiết của chương 1 sẽ được viết ở đây. Bạn có thể chèn các đoạn văn bản kể chuyện để luyện tập định dạng CSS như màu chữ, khoảng cách dòng, căn lề,...</p>
+            </section>
+
+            <section id="chuong2">
+                <h2>Chương 2: Diễn biến bất ngờ</h2>
+                <p>Nội dung chi tiết của chương 2. Khi người đọc bấm vào mục lục Chương 2 ở phía trên, trang sẽ tự động cuộn đến phần nội dung này nhờ vào thẻ liên kết neo (anchor link).</p>
+            </section>
+
+            <section id="chuong3">
+                <h2>Chương 3: Kết thúc viên mãn</h2>
+                <p>Nội dung chi tiết của chương 3. Khép lại câu chuyện ngắn bằng một cái kết trọn vẹn và ý nghĩa.</p>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
