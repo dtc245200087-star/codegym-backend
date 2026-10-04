@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header cố định */
+.header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    background-color: #c93b2b;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 6px 15px;
+    display: inline-block;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+/* Head-link */
+.head-link {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    gap: 25px;
+}
+
+.head-link a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding-bottom: 2px;
+}
+
+.head-link a:hover, .head-link a.active {
+    font-weight: bold;
+    color: #c93b2b;
+    border-bottom: 2px solid #c93b2b;
+}
+
+/* Main Container Layout */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 15px;
+}
+
+/* Left Content (Menu video) */
+.left-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.video-item {
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+}
+
+.video-thumb img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    background-color: #ccc;
+}
+
+.video-info h4 {
+    font-size: 14px;
+    margin: 8px 0 4px 0;
+    color: #000;
+}
+
+.video-info p, .video-info span {
+    font-size: 12px;
+    color: #666;
+    margin: 2px 0;
+}
+
+/* Right Content (Trình chiếu video) */
+.right-content {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #e2e2e2;
+}
+
+.video-details h2 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #222;
+}
+
+.video-details .views, .video-details .author {
+    font-size: 13px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.description {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+    color: #666;
+    margin-top: 40px;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+}

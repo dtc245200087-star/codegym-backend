@@ -1,0 +1,54 @@
+/* Thiết lập chung cho toàn bộ trang */
+body {
+    font-family: sans-serif;
+    color: #000000;
+    line-height: 1.6;
+    background-color: #ffffff;
+    margin: 40px;
+}
+
+/* Khung chứa nội dung chính căn giữa */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Định dạng tiêu đề chính "Việt Nam" */
+h1 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+
+/* Định dạng tiêu đề phụ Wikipedia */
+.sub-title {
+    font-size: 13px;
+    color: #202122;
+    margin-bottom: 8px;
+}
+
+/* Đường kẻ ngang mô phỏng giao diện Wikipedia */
+.divider {
+    border: none;
+    border-top: 1px solid #a2a9b1;
+    margin-bottom: 20px;
+}
+
+/* Định dạng các đoạn văn bản */
+p {
+    font-size: 15px;
+    text-align: justify; /* Căn đều hai bên giống văn bản sách báo */
+    text-indent: 40px;   /* Thụt đầu dòng đoạn văn */
+    margin-bottom: 16px;
+}
+
+/* Định dạng màu sắc chuẩn cho các liên kết Wikipedia */
+.wiki-link {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+/* Hiệu ứng gạch chân khi di chuột vào liên kết */
+.wiki-link:hover {
+    text-decoration: underline;
+}

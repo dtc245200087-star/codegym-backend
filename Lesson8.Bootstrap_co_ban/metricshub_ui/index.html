@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetricsHub Dashboard</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Liên kết file CSS tùy chỉnh -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. NAVBAR (Sử dụng Flexbox để linh hoạt co giãn theo nội dung, chống tràn chữ) -->
+    <nav class="metrics-navbar">
+        <div class="nav-logo">MetricsHub</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">VeryLongGermanWordForDashboard</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-profile">Profile</div>
+    </nav>
+
+    <!-- 2. DASHBOARD (Sử dụng CSS Grid để tạo cấu trúc Bento Box dạng lưới 2D, loại bỏ hoàn toàn thẻ div lồng nhau rườm rà) -->
+    <main class="dashboard-grid">
+        <div class="widget widget-large">Chart A (Span 2 hàng / 2 cột)</div>
+        <div class="widget">Chart B</div>
+        <div class="widget">Chart C</div>
+        <div class="widget">Chart D</div>
+    </main>
+
+    <!-- 3. PRICING SECTION (Tận dụng hệ thống lưới 12 cột chuẩn của Bootstrap 5, không viết tay media queries) -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Bảng giá dịch vụ</h2>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gói Cơ bản</h5>
+                        <p class="card-text">Dành cho cá nhân khởi nghiệp.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gói Nâng cao</h5>
+                        <p class="card-text">Dành cho đội ngũ phát triển vừa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gói Doanh nghiệp</h5>
+                        <p class="card-text">Giải pháp toàn diện quy mô lớn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
